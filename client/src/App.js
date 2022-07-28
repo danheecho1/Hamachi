@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path ="/" element = {<SignIn />} />
         <Route path ="/dashboard" element = {<Dashboard />} />
-        <Route path="/api/groups" element={<AllGroups whenSubmitted={whenSubmitted} setWhenSubmitted={setWhenSubmitted} />} />
+        <Route path="/api/groups" element={<AllGroups />} />
         <Route path="/api/groups/:groupId" element={<GroupDetail />} />
         <Route path="/api/groups/:groupId/persons" element={<AllPersons whenSubmitted={whenSubmitted} setWhenSubmitted={setWhenSubmitted} />} />
       </Routes>
