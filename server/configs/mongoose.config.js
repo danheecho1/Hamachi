@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect("mongodb://localhost/Hamachi_db_2", {
+mongoose.connect("mongodb://localhost/Hamachi_db", {
     useNewUrlParser: true, 
     useUnifiedTopology: true
 })
