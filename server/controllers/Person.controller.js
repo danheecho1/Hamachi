@@ -34,9 +34,3 @@ module.exports.deletePerson = (req, res) => {
         .then(deleteConfirmation => res.json(deleteConfirmation))
         .catch(err => res.json(err))
 }
-
-module.exports.createPersonV2 = (req, res) => {
-    Group.findByIdAndUpdate({_id:req.params.id}, req.body, {new: true})
-        .then(updatedGroup => res.json(updatedGroup))
-        .catch(err => res.status(400).json(err))
-}
