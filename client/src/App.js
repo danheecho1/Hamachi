@@ -1,7 +1,7 @@
 import './App.css';
 import AllGroups from './views/AllGroups'
 import GroupDetail from './views/GroupDetail';
-import AllPersons from './views/AllPersons'
+import Persons from './components/Persons'
 import Dashboard from './views/Dashboard'
 import SignIn from './views/SignIn';
 
@@ -19,7 +19,7 @@ function App() {
         <Route path ="/dashboard" element = {<Dashboard />} />
         <Route path="/api/groups" element={<AllGroups />} />
         <Route path="/api/groups/:groupId" element={<GroupDetail />} />
-        <Route path="/api/groups/:groupId/persons" element={<AllPersons whenSubmitted={whenSubmitted} setWhenSubmitted={setWhenSubmitted} />} />
+        <Route path="/api/groups/:groupId/persons" element={<Persons />} />
       </Routes>
     </div>
   );
